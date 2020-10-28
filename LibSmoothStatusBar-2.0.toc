@@ -1,0 +1,17 @@
+#@retail@
+## Interface: 90001
+#@end-retail@
+#@non-retail@
+## Interface: 11305
+#@end-non-retail@
+## Version: @project-version@
+## Title: Lib: SmoothStatusBar-2.0
+## Notes: Smoothly animates status bar
+## Dependencies: LibStub
+## Author: Doadin
+## X-Credits: Galedric
+## X-License: MIT License
+## X-Website: https://wow.curseforge.com/projects/plexussmoothhealth/
+## X-Curse-Project-ID: 
+
+LibSmoothStatusBar-2.0.xml
