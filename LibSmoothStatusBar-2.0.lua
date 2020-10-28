@@ -84,21 +84,21 @@ local function SmoothSetValue(self, value)
 end
 
 if upgrade then
-	for bar, value in pairs(lib.smoothing) do
+	for bar, value in pairs(lib.smoothing) do --luacheck: ignore 213
 		if bar.SetValue_ then
 			bar.SetValue = SmoothSetValue
 		end
 	end
 end
 
-function lib:SmoothBar(bar)
+function lib:SmoothBar(bar) --luacheck: ignore 212
 	if not bar.SetValue_ then
 		bar.SetValue_ = bar.SetValue;
 		bar.SetValue = SmoothSetValue;
 	end
 end
 
-function lib:ResetBar(bar)
+function lib:ResetBar(bar) --luacheck: ignore 212
 	if bar.SetValue_ then
 		bar.SetValue = bar.SetValue_;
 		bar.SetValue_ = nil;
